@@ -14,12 +14,19 @@ int show(C c1){
     return 0;
 }
 int main() {
+
+    C complex_array [5];
+
     for (int i = 0; i<5; i ++){
         C ci ;
         printf("Enter the complex number values pls : ");
-        scanf("%f %f",  &ci.real, &ci.img);
+        scanf("%f %f", &complex_array[i].real, &complex_array[i].img);
         show(ci );
         
+    }
+
+    for (int i = 1; i < 6; i++) {
+        show(complex_array[i] );
     }
 
      
